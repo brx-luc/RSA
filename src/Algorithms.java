@@ -23,6 +23,10 @@ public class Algorithms {
             y1 = y0.subtract(q.multiply(y1));
             y0 = temp;
         }
+        //guarantee positive d value
+        while (y0.compareTo(a) == -1){
+            y0 = y0.add(a);
+        }
         return y0;
     }
 
