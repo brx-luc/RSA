@@ -24,7 +24,7 @@ public class Algorithms {
             y0 = temp;
         }
         //guarantee positive d value
-        while (y0.compareTo(a) == -1){
+        while (y0.compareTo(BigInteger.ZERO) == -1){
             y0 = y0.add(a);
         }
         return y0;
